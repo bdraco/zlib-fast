@@ -40,7 +40,7 @@ def compressobj(
 ) -> isal_zlib.Compress:
     """Compressobj adapter to convert zlib level to isal compression level."""
     if level < 0 or level > 9:
-        raise ValueError("Invalid compression level: %d", level)
+        raise ValueError(f"Invalid compression level: {level}")
 
     if level <= 3:
         level = isal_zlib.Z_BEST_SPEED
