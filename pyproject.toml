@@ -24,6 +24,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+isal = ">=1.5.3"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
