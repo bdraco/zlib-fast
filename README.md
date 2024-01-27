@@ -40,11 +40,31 @@
 
 A wrapper to use the fastest available zlib
 
+zlib is be a bottleneck for creating backups with `tarfile`. `zlib-fast` replaces usage of `zlib` with [`isal`](https://github.com/pycompression/python-isal) which is a drop-in faster replacement.
+
+Unlike the base isal implementation, this module maps zlib compression
+levels for `compressobj` to their nearest `isal` equivalent which allows
+it to be used as a drop in replacement with `tarfile`.
+
 ## Installation
 
 Install this via pip (or your favourite package manager):
 
 `pip install zlib-fast`
+
+## Usage
+
+Enable zlib-fast support by calling `zlib_fast.enable()`.
+
+```python
+
+import zlib_fast
+
+zlib_fast.enable()
+zlib_fast.disable()
+```
+
+The most common use case is for use with `tarfile` which does a late import. `enable` will only be effective for future imports of `zlib`, and will not redirect existing imports. If you need to use this module for other use cases, be sure to call `zlib_fast.enable()` before any code that loads `zlib`.
 
 ## Contributors ✨
 
