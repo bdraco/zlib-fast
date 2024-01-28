@@ -1,0 +1,3 @@
+"""Constants."""
+
+ZLIB_DEFAULT_COMPRESS_LEVEL = 6

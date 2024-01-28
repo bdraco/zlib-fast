@@ -29,6 +29,8 @@ from isal.isal_zlib import (
     error,
 )
 
+from .utils import gzip_compress_level_to_isal
+
 
 def compressobj(
     level: int = isal_zlib.Z_DEFAULT_COMPRESSION,
@@ -39,16 +41,7 @@ def compressobj(
     zdict: Optional[Any] = None,
 ) -> isal_zlib.Compress:
     """Compressobj adapter to convert zlib level to isal compression level."""
-    if level < 0 or level > 9:
-        raise ValueError(f"Invalid compression level: {level}")
-
-    if level <= 3:
-        level = isal_zlib.Z_BEST_SPEED
-    elif level <= 6:
-        level = isal_zlib.Z_DEFAULT_COMPRESSION
-    else:
-        level = isal_zlib.Z_BEST_COMPRESSION
-
+    level = gzip_compress_level_to_isal(level)
     if zdict is not None:
         return isal_zlib.compressobj(
             level,
