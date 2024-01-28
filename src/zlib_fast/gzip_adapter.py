@@ -30,7 +30,7 @@ def compress(data, compresslevel=ZLIB_DEFAULT_COMPRESS_LEVEL, *, mtime=None):  #
 
     Optional argument is the compression level, in range of 0-9.
     """
-    return igzip.compress(data, gzip_compress_level_to_isal(compresslevel), mtime)
+    return igzip.compress(data, gzip_compress_level_to_isal(compresslevel), mtime=mtime)
 
 
 class GzipFileAdapter(igzip.GzipFile):
