@@ -1,5 +1,6 @@
 __version__ = "0.1.0"
 
+import gzip as gzip_original
 import sys
 import zlib as zlib_original
 
@@ -16,4 +17,4 @@ def enable() -> None:
 def disable() -> None:
     """Disable the adapter restore the original zlib."""
     sys.modules["zlib"] = zlib_original
-    sys.modules["gzip"] = zlib_original
+    sys.modules["gzip"] = gzip_original
