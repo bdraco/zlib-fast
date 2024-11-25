@@ -51,10 +51,10 @@ IGzipFile = GzipFileAdapter
 GzipFile = GzipFileAdapter
 
 __all__ = (
+    "READ_BUFFER_SIZE",
+    "BadGzipFile",
     "GzipFile",
-    "open",
     "compress",
     "decompress",
-    "BadGzipFile",
-    "READ_BUFFER_SIZE",
+    "open",
 )
