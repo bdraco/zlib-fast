@@ -62,9 +62,9 @@ def compressobj(
 
 
 __all__ = (
+    "DEFLATED",
     "DEF_BUF_SIZE",
     "DEF_MEM_LEVEL",
-    "DEFLATED",
     "MAX_WBITS",
     "Z_BEST_COMPRESSION",
     "Z_BEST_SPEED",
@@ -82,10 +82,10 @@ __all__ = (
     "Decompress",
     "adler32",
     "compress",
+    "compressobj",
     "crc32",
     "crc32_combine",
     "decompress",
     "decompressobj",
     "error",
-    "compressobj",
 )
