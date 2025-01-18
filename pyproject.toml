@@ -27,7 +27,7 @@ python = "^3.9"
 isal = ">=1.5.3"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.0"
+pytest = ">=7,<9"
 pytest-cov = "^3.0"
 
 [tool.poetry.group.docs]
