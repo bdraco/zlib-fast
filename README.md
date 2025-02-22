@@ -1,14 +1,14 @@
 # zlib-fast
 
 <p align="center">
-  <a href="https://github.com/bdraco/zlib-fast/actions/workflows/ci.yml?query=branch%3Amain">
-    <img src="https://img.shields.io/github/actions/workflow/status/bdraco/zlib-fast/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
+  <a href="https://github.com/bluetooth-devices/zlib-fast/actions/workflows/ci.yml?query=branch%3Amain">
+    <img src="https://img.shields.io/github/actions/workflow/status/bluetooth-devices/zlib-fast/ci.yml?branch=main&label=CI&logo=github&style=flat-square" alt="CI Status" >
   </a>
   <a href="https://zlib-fast.readthedocs.io">
     <img src="https://img.shields.io/readthedocs/zlib-fast.svg?logo=read-the-docs&logoColor=fff&style=flat-square" alt="Documentation Status">
   </a>
-  <a href="https://codecov.io/gh/bdraco/zlib-fast">
-    <img src="https://img.shields.io/codecov/c/github/bdraco/zlib-fast.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
+  <a href="https://codecov.io/gh/bluetooth-devices/zlib-fast">
+    <img src="https://img.shields.io/codecov/c/github/bluetooth-devices/zlib-fast.svg?logo=codecov&logoColor=fff&style=flat-square" alt="Test coverage percentage">
   </a>
 </p>
 <p align="center">
@@ -34,7 +34,7 @@
 
 **Documentation**: <a href="https://zlib-fast.readthedocs.io" target="_blank">https://zlib-fast.readthedocs.io </a>
 
-**Source Code**: <a href="https://github.com/bdraco/zlib-fast" target="_blank">https://github.com/bdraco/zlib-fast </a>
+**Source Code**: <a href="https://github.com/bluetooth-devices/zlib-fast" target="_blank">https://github.com/bluetooth-devices/zlib-fast </a>
 
 ---
 
